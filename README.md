@@ -1,44 +1,37 @@
-<p align="center"><a href="https://open5gs.org" target="_blank" rel="noopener noreferrer"><img width="100" src="https://open5gs.org/assets/img/open5gs-logo-only.png" alt="Open5GS logo"></a></p>
+# Open5GS E2E edge UPF
 
-## Getting Started
+## Overview
 
-Please follow the [documentation](https://open5gs.org/open5gs/docs/) at [open5gs.org](https://open5gs.org/)!
+A customized Open5GS 2.7.2 implementation for private end-to-end testing and vendor NF compatibility validation. the project needs to be run together with open5gs_e2e_core project
 
-## Sponsors
+## Description of what this customization does
 
-If you find Open5GS useful for work, please consider supporting this Open Source project by [Becoming a sponsor](https://github.com/sponsors/acetcom). To manage the funding transactions transparently, you can donate through [OpenCollective](https://opencollective.com/open5gs).
+- **Enhancement UPF for GBR QoS flow controlling**: please refer to release note
 
-<p align="center">
-  <h3 align="center">Special Sponsor</h3>
-</p>
 
-<p align="center">
-  <a target="_blank" href="https://mobi.com">
-  <img alt="special sponsor mobi" src="https://open5gs.org/assets/img/mobi-open5GS.png" width="400">
-  </a>
-</p>
+## Testing Scenarios 
 
-<p align="center">
-  <a target="_blank" href="https://open5gs.org/#sponsors">
-      <img alt="sponsors" src="https://open5gs.org/assets/img/sponsors.svg">
-  </a>
-</p>
+- PDU session establishment procedures
+- Non-GBR and GBR QoS flow validation
+- DNN-based routing and network slice selection
+- Location-based signaling and tracking area management
+- Basic MEC workflow integration (Edge UPF project involved for QoS management)
 
-## Community
+## Installation
 
-- Problem with Open5GS can be filed as [issues](https://github.com/open5gs/open5gs/issues) in this repository.
-- Other topics related to this project are happening on the [discussions](https://github.com/open5gs/open5gs/discussions).
-- Voice and text chat are available in Open5GS's [Discord](https://discordapp.com/) workspace. Use [this link](https://discord.gg/GreNkuc) to get started.
+Based on Open5GS 2.7.2. Follow the standard Open5GS compilation and installation process:
 
-## Contributing
+```bash
+git clone https://github.com/timyl/open5gs_e2e_edge.git
+cd open5gs_e2e_edge
+```
 
-If you're contributing through a pull request to Open5GS project on GitHub, please read the [Contributor License Agreement](https://open5gs.org/open5gs/cla/) in advance.
+Refer to [official Open5GS documentation](https://open5gs.org/open5gs/docs/) for detailed build instructions.
+
+## Related Projects
+
+- **open5gs_e2e_core**: 5G core functionality for distributed MEC scenarios
 
 ## License
 
-- Open5GS Open Source files are made available under the terms of the GNU Affero General Public License ([GNU AGPL v3.0](https://www.gnu.org/licenses/agpl-3.0.html)).
-- [Commercial licenses](https://open5gs.org/open5gs/support/) are also available from [NewPlane](https://newplane.io/) at [sales@newplane.io](mailto:sales@newplane.io).
-
-## Support
-
-Technical support and customized services for Open5GS are provided by [NewPlane](https://newplane.io/) at [support@newplane.io](mailto:support@newplane.io).
+GNU Affero General Public License v3.0 (GNU AGPL v3.0)
