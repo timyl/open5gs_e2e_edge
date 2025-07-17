@@ -1,0 +1,32 @@
+# compile directories
+build/
+install/
+dist/
+out/
+
+# logs files
+*.log
+logs/
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# tmp files
+*.tmp
+*.bak
+*~
+
+# system core files in root directories
+/core
+/core.*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# sys files
+.DS_Store
+Thumbs.db
